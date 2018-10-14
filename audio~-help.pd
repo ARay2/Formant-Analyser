@@ -1,0 +1,8 @@
+#N canvas 596 382 450 300 10;
+#X text 172 72 INPUT;
+#X text 172 91 1 Decision to start mirophone (0/1);
+#X text 177 128 OUTPUT;
+#X text 174 147 1 Audio Signal;
+#X text 172 106 2 Bang to play recording;
+#X text 115 24 Audio~: Makes decision to play recording or live input
+;

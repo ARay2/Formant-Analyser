@@ -1,0 +1,8 @@
+#N canvas 707 164 450 300 10;
+#X text 151 103 INPUT;
+#X text 149 123 1 Linear Amplitude;
+#X text 152 149 OUTLET;
+#X text 107 29 convert_amplitude: Converts amplitude to 6bit data that
+;
+#X text 109 47 be written into file;
+#X text 152 171 1 Amplitude in a 6bit format;

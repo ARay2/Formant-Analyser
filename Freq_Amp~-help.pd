@@ -1,0 +1,9 @@
+#N canvas 110 128 450 300 10;
+#X text 142 95 INPUT;
+#X text 145 119 1 Audio Signal;
+#X text 144 143 OUTPUT;
+#X text 146 165 1 Frequency in Hz;
+#X text 149 188 2 Linear Amplitude;
+#X text 106 32 Freq_Amp: Takes in audio signal and converts it into
+;
+#X text 107 50 frequency and amplitude;

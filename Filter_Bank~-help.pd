@@ -1,0 +1,9 @@
+#N canvas 43 46 450 300 10;
+#X text 128 55 INPUT;
+#X text 130 79 1 Audio Signal;
+#X text 128 129 OUTPUT;
+#X text 74 19 Filter_Bank: Takes an audio signal and filters the;
+#X text 74 33 part corresponding to the control frequencies;
+#X text 130 93 2 Control frequency (highest in Hz);
+#X text 130 109 3 Control frequency (lowest in Hz);
+#X text 131 147 1 Signal within Control frequency at 2 and 3;

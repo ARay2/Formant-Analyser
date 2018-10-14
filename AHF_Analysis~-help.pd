@@ -1,0 +1,7 @@
+#N canvas 646 165 450 300 10;
+#X text 108 64 INPUT;
+#X text 109 89 1 Audio Signal;
+#X text 108 118 OUTPUT;
+#X text 110 139 1 Outputs the amplitude at Hz;
+#X text 104 22 AHF_Analysis: Gets the amplitude of audio at the fourth
+formant which is fixed at Hz;

@@ -1,0 +1,22 @@
+#N canvas 708 260 450 300 10;
+#X text 76 78 INPUT;
+#X text 78 100 1;
+#X text 98 100 Takes a bang to start DSP;
+#X text 79 117 2;
+#X text 98 116 Takes a bang to start recording;
+#X text 79 147 3;
+#X text 97 145 Takes a bang to save file;
+#X text 80 166 4;
+#X text 98 165 Audio signal input;
+#X text 79 183 5;
+#X text 98 182 Takes a bang to change speech to whisper;
+#X text 79 132 3;
+#X text 98 131 Takes a bang to stop audio;
+#X text 79 204 OUTPUT;
+#X text 80 223 1;
+#X text 101 222 Gives the bits per second rate every second;
+#X text 75 19 formant_analyser: Takes an audio input and converts it
+into;
+#X text 75 30 numeric data in the form of formants and amplitudes.
+It saves the data to a file that can be later sent to a synthesiser
+to be converted back to sound signal;

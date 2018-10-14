@@ -1,0 +1,8 @@
+#N canvas 397 97 450 300 10;
+#X text 136 113 INPUT;
+#X text 133 133 1 Audio Signal;
+#X text 135 161 OUTPUT;
+#X text 135 183 1 FN Frequency;
+#X text 136 200 2 Amplitude at natural frequency;
+#X text 34 56 ALF_Analysis: Takes an audio signal and gets the natural
+frequency and the corresponding amplitude;

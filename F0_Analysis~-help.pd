@@ -1,0 +1,9 @@
+#N canvas 584 200 450 298 10;
+#X text 142 88 INPUT;
+#X text 140 109 1 Audio Signal;
+#X text 145 131 OUTPUT;
+#X text 144 151 2 F0 frequency in 6 it format;
+#X text 106 28 F0_Analysis: Takes in audio input \, extracts frequency
+;
+#X text 104 45 from the signal and converts it into 6bit format;
+#X text 105 59 to be written into file;

@@ -1,0 +1,21 @@
+#N canvas -8 -8 1366 685 10;
+#X obj -250 -267 log;
+#X obj -190 -264 metro;
+#X msg -190 -234 10;
+#X obj -190 -200 log;
+#X obj -218 -155 /;
+#X obj -217 -319 inlet;
+#X obj -220 -63 outlet;
+#X obj -219 -126 * 20;
+#X obj -220 -94 + 63;
+#X text -313 -352 Converts amplitude to synthesiser friendly value
+;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 1;
+#X connect 4 0 7 0;
+#X connect 5 0 0 0;
+#X connect 5 0 1 0;
+#X connect 7 0 8 0;
+#X connect 8 0 6 0;

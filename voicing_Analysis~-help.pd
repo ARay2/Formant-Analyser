@@ -1,0 +1,10 @@
+#N canvas 583 146 450 300 10;
+#X text 151 102 INPUT;
+#X text 154 126 1 Voicing/Whisper choice (0/1);
+#X text 153 145 2 Audio Signal;
+#X text 155 163 3 Threshold;
+#X text 154 185 OUTPUT;
+#X text 159 203 Voicing decision in 6bit;
+#X text 75 38 Voicing_Anallysis: Takes in the voicing decision;
+#X text 78 56 adds it to the voiced/unvoiced detection output;
+#X text 77 72 comment;

@@ -1,0 +1,44 @@
+#N canvas 0 5 1362 680 10;
+#X obj 293 -190 adc~;
+#X obj 352 -142 *~;
+#X obj 328 -242 moses 0;
+#X text 114 -277 Input to start the microphohne =>;
+#X text 136 -192 Live Input function =>;
+#X text 18 -146 The signal is multiplied by the incoming number which
+decides whether the microphone will function or not =>;
+#X obj 328 -277 inlet;
+#X obj 518 -83 outlet~;
+#X obj 695 -239 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 742 -193 start;
+#X obj 629 -301 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 504 -222 Load Audio File >>;
+#X text 822 -218 << delay for start the readfs after open WAV file
+;
+#X text 822 -190 << start readfs~;
+#X obj 629 -271 openpanel;
+#X msg 629 -215 open \$1;
+#X text 680 -332 << Enter a Bang;
+#X obj 629 -332 inlet;
+#X text 424 -281 Open file dialogue >>;
+#X obj 742 -217 delay 500;
+#X text 468 -159 create 2 channel output;
+#X obj 628 -161 readsf~;
+#X obj 609 -86 outlet;
+#X text 658 -88 fires the save file option once the recording completes
+playing;
+#X connect 0 0 1 0;
+#X connect 1 0 7 0;
+#X connect 2 1 1 1;
+#X connect 6 0 2 0;
+#X connect 8 0 19 0;
+#X connect 9 0 21 0;
+#X connect 10 0 14 0;
+#X connect 14 0 8 0;
+#X connect 14 0 15 0;
+#X connect 15 0 21 0;
+#X connect 17 0 10 0;
+#X connect 19 0 9 0;
+#X connect 21 0 7 0;
+#X connect 21 1 22 0;

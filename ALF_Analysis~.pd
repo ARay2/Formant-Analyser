@@ -1,0 +1,37 @@
+#N canvas 0 0 1362 685 10;
+#X floatatom -1072 223 12 0 0 0 - - -;
+#X text -1071 239 ALF;
+#X obj -1072 268 convert_amplitude;
+#X obj -1072 332 outlet;
+#X obj -1122 26 inlet~;
+#X obj -1072 298 clip 1 63;
+#X obj -1122 61 bp~ 250 50;
+#X obj -1123 83 bp~ 250 50;
+#X obj -1142 349 outlet;
+#X text -1117 192 FN;
+#X obj -1123 210 - 95;
+#X obj -1123 233 / 5;
+#X obj -1123 257 + 1;
+#X floatatom -1123 291 5 0 0 0 - - -;
+#X text -1050 62 filters the input signal at 250Hz;
+#X text -1006 299 keeps the values within the specified range;
+#X text -1050 83 more than one filers are used to make it work better
+;
+#X obj -1142 318 clip 1 63;
+#X text -1407 320 keeps the values within the specified range;
+#X obj -1123 123 Freq_Amp~;
+#X text -1049 123 Processes the signal and returns the frequency and
+amplitude;
+#X connect 0 0 2 0;
+#X connect 2 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 3 0;
+#X connect 6 0 7 0;
+#X connect 7 0 19 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 12 0 13 0;
+#X connect 13 0 17 0;
+#X connect 17 0 8 0;
+#X connect 19 0 10 0;
+#X connect 19 1 0 0;

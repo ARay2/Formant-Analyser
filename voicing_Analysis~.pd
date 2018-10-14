@@ -1,0 +1,54 @@
+#N canvas 0 0 1362 685 10;
+#X floatatom -390 6 5 0 0 0 - - -;
+#X text -354 10 V/UV Decision;
+#X obj -287 182 * 62;
+#X obj -379 -165 inlet;
+#X obj -287 320 outlet;
+#X obj -161 -42 inlet~;
+#X obj -287 111 +;
+#X floatatom -287 247 5 0 0 0 - - -;
+#X obj -287 281 clip 1 63;
+#X obj -161 40 voicing_detector~;
+#X obj 22 38 block~ 1024;
+#X obj -62 -5 inlet;
+#X text -208 68 1=voiced;
+#X text -208 81 0=unvoiced;
+#X text -64 -24 threshold (0-100);
+#X obj -287 215 + 1;
+#X obj -244 71 t b f;
+#X text -127 56 Takes the input signal and tells when it has speech
+voiced/unvoiced;
+#X text -230 189 This part puts the incoming value into a 6bit format
+for the Holmes synthesiser;
+#X text -214 277 keeps the values within the specified range;
+#X obj -379 -126 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj -379 -65 metro;
+#X obj -430 -64 metro;
+#X obj -430 -96 == 0;
+#X msg -379 -30 1;
+#X msg -430 -28 0;
+#X text -354 -128 Decision for normal speech and whispered;
+#X text -348 -30 sends in a string of 1 if the speech is to be whispered
+;
+#X text -747 -45 sends in a string of 0 if the speech is to be normal
+;
+#X connect 0 0 6 0;
+#X connect 2 0 15 0;
+#X connect 3 0 20 0;
+#X connect 5 0 9 0;
+#X connect 6 0 2 0;
+#X connect 7 0 8 0;
+#X connect 8 0 4 0;
+#X connect 9 0 16 0;
+#X connect 11 0 9 1;
+#X connect 15 0 7 0;
+#X connect 16 0 6 0;
+#X connect 16 1 6 1;
+#X connect 20 0 21 0;
+#X connect 20 0 23 0;
+#X connect 21 0 24 0;
+#X connect 22 0 25 0;
+#X connect 23 0 22 0;
+#X connect 24 0 0 0;
+#X connect 25 0 0 0;
